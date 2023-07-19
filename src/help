@@ -1,0 +1,19 @@
+Usage:  nbeditor-cli [OPTIONS...]
+  or:   nbeditor-cli [OPTIONS...] COMMAND...
+  or:   nbeditor-cli [OPTIONS...] [variable[=value] ...]
+  or:   nbeditor-cli [OPTIONS...] [variable[=arg1,arg2,arg3] ...]
+
+Options:
+  -i,   --stdin     (str)   read form standard input
+  -o,   --stdout    (str)   write to standard output
+  -f,   --force             force overwrite of output file
+  -t,   --threads   (u8)    use at most NUM threads; the default is 1; set to 0 to use as many threads as there are processor cores
+  -v,   --verbose           be verbose
+  -h,   --help              show this help message and exit
+
+  -F,   --format    (vec)   target data format
+  -V,   --version           display the version number and exit
+
+Example:
+  nbeditor-cli -i - ./path/file.snbt -o > ./target/output.nbt
+  nbeditor-cli -i - ./path/file.nbt -o > ./target --format=JSON,XML --threads 1 -vv
