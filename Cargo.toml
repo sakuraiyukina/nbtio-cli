@@ -1,0 +1,14 @@
+[[bin]]
+name = "nbtread"
+path = "src/readnbt.rs"
+
+[package]
+name = "nbtio-cli"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+clap = "4.3.12"
+rusty-leveldb = "1.0.8"
